@@ -12,7 +12,7 @@ import drawutils as du
 
 @hops.component(
     "/meshgraph",
-    name = "meshgraph",
+    name = "meshToGraph",
     inputs=[
         hs.HopsMesh("Input Mesh", "M", "Mesh"),
         hs.HopsBoolean("Plot", "P", "Plot", optional=True),
@@ -36,8 +36,8 @@ def meshToGraph(mesh, plot=False, save = False):
 
 
 @hops.component(
-    "/shortestpath",
-    name = "shortestpath",
+    "/shortestPath",
+    name = "shortestPath",
     inputs=[
         hs.HopsMesh("Input Mesh", "M", "Mesh"),
         hs.HopsInteger("face Index 1","f1","Face index one"),
